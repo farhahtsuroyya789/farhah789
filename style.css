@@ -1,0 +1,193 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f9f2;
+            color: #263b2b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #176b3a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b9f6ca;
+        }
+
+        .hero {
+            min-height: 480px;
+            padding: 90px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(
+                120deg,
+                #d9f5d5,
+                #f4f9f2
+            );
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #176b3a;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #218c4b;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background: #145c31;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #176b3a;
+            font-size: 32px;
+        }
+
+        .section-title p {
+            margin-top: 10px;
+            color: #627366;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px #00000010;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #218c4b;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: #e3f3df;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: 15px auto;
+        }
+
+        .tips {
+            background: white;
+        }
+
+        .tips ul {
+            max-width: 650px;
+            margin: auto;
+            list-style: none;
+        }
+
+        .tips li {
+            background: #f0f8ed;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        #pesan {
+            margin-top: 20px;
+            color: #176b3a;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #124b2b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
